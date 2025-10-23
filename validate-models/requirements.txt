@@ -1,0 +1,7 @@
+inference-sdk
+opencv-python
+pandas
+supervision
+numpy
+python-dotenv
+PyYAML

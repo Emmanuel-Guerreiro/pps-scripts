@@ -1,0 +1,17 @@
+target_classes:
+  - "container"
+# target_dataset_path: "/home/emma/facultad/pps/datasets/containers/harmonized"
+target_dataset_path: "./testing"
+datasets:
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/container.v1i.yolov11"
+    fields_map:
+      - source_field: "0"
+        target_field: "container"
+  # - origin: "legacy_api"
+  #   fields_map:
+  #     - source_field: "username"
+  #       target_field: "userName"
+  #     - source_field: "emailAddr"
+  #       target_field: "email"
+  #     - source_field: "signUpTime"
+  #       target_field: "createdDate"
