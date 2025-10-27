@@ -1,17 +1,37 @@
 target_classes:
-  - "container"
-# target_dataset_path: "/home/emma/facultad/pps/datasets/containers/harmonized"
-target_dataset_path: "./testing"
+  - "Healthy Container"
+target_size: 640 # Square only supported by now
+target_dataset_path: "/home/emma/facultad/pps/validacion/containers/dataset"
 datasets:
   - origin: "/home/emma/facultad/pps/datasets/containers/raw/container.v1i.yolov11"
     fields_map:
       - source_field: "0"
-        target_field: "container"
-  # - origin: "legacy_api"
-  #   fields_map:
-  #     - source_field: "username"
-  #       target_field: "userName"
-  #     - source_field: "emailAddr"
-  #       target_field: "email"
-  #     - source_field: "signUpTime"
-  #       target_field: "createdDate"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/Shipping\ Containers.v4i.yolov11"
+    fields_map:
+      - source_field: "container"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/container.v2i.yolov11"
+    fields_map:
+      - source_field: "container"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/Containers\ Detection.v1i.yolov11"
+    fields_map:
+      - source_field: "container"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/container-detection.v7i.yolov11"
+    fields_map:
+      - source_field: "Healthy Container"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/Cargo\ Containers.v1i.yolov11"
+    fields_map:
+      - source_field: "Container"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/shipping-container.v1i.yolov11"
+    fields_map:
+      - source_field: "0"
+        target_field: "Healthy Container"
+  - origin: "/home/emma/facultad/pps/datasets/containers/raw/container.v5i.yolov11"
+    fields_map:
+      - source_field: "insider_all"
+        target_field: "Healthy Container"

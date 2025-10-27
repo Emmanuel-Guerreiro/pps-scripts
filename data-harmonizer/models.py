@@ -12,13 +12,14 @@ class FieldMapping(BaseModel):
 class DataMapping(BaseModel):
     """Represents a complete data mapping configuration."""
     origin: str
-    dest: str
     fields_map: List[FieldMapping]
 
 
 class ConfigRoot(BaseModel):
     """Represents the root configuration with target classes and datasets."""
     target_classes: List[str]
+    target_size: int
+    target_dataset_path: str
     datasets: List[DataMapping]
 
 
@@ -49,7 +50,6 @@ def load_config_mappings(config_path: str) -> ConfigRoot:
         
         data_mapping = DataMapping(
             origin=mapping_config["origin"],
-            dest=mapping_config["dest"],
             fields_map=field_mappings
         )
         datasets.append(data_mapping)
@@ -57,6 +57,8 @@ def load_config_mappings(config_path: str) -> ConfigRoot:
     # Create the root configuration object
     config_root = ConfigRoot(
         target_classes=config_data["target_classes"],
+        target_size=config_data["target_size"],
+        target_dataset_path=config_data["target_dataset_path"],
         datasets=datasets
     )
     
@@ -77,7 +79,6 @@ if __name__ == "__main__":
     for i, mapping in enumerate(config.datasets):
         print(f"Dataset {i+1}:")
         print(f"  Origin: {mapping.origin}")
-        print(f"  Destination: {mapping.dest}")
         print(f"  Field mappings:")
         for field in mapping.fields_map:
             print(f"    {field.source_field} -> {field.target_field}")

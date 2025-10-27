@@ -5,3 +5,4 @@ supervision
 numpy
 python-dotenv
 PyYAML
+roboflow

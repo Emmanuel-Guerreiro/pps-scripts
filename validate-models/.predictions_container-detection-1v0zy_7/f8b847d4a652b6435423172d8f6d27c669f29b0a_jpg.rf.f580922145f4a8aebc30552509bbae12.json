@@ -1,0 +1,1 @@
+{"inference_id": "aa794bb3-bee8-44a6-a8fe-cb1ebb17d6e3", "time": 0.04688866500009681, "image": {"width": 640, "height": 640}, "predictions": [{"x": 322.5, "y": 262.5, "width": 631.0, "height": 493.0, "confidence": 0.9113181233406067, "class": "Healthy Container", "class_id": 0, "detection_id": "86f386e8-4e6d-48dc-9098-a20fbe7803c5"}]}

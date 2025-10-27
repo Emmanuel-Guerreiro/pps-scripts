@@ -1,3 +1,6 @@
-api_key: ""
-model: "shipping-container-lunzw/1"
-test_dir: "/home/emma/facultad/pps/datasets/containers/raw/shipping-container.v1i.yolov11/test"
+api_key: "ooPxxzLT1xgs8CWEiMjY"
+test_dir: "/home/emma/facultad/pps/datasets/containers/raw/container-detection.v7i.yolov11/test"
+models:
+  # - name: "container-damage-detection-full/3"
+  - name: "container-detection-1v0zy/7"
+  # - name: "container-segmentation-fgvew/3"

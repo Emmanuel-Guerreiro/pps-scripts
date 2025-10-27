@@ -1,0 +1,17 @@
+{
+  "inference_id": "7c59f76f-ac23-4875-a11e-ccc3439698af",
+  "time": 0.06611356199999818,
+  "image": { "width": 640, "height": 640 },
+  "predictions": [
+    {
+      "x": 233.0,
+      "y": 275.5,
+      "width": 344.0,
+      "height": 255.0,
+      "confidence": 0.8994548320770264,
+      "class": "Healthy Container",
+      "class_id": 0,
+      "detection_id": "0603e01a-7ad6-4754-8ab8-f4695cc9865c"
+    }
+  ]
+}
