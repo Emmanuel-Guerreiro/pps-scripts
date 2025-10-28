@@ -24,3 +24,4 @@
 | Model | Mean Precision | Mean Recall | Mean IoU | Sample Count |
 |-------|----------------|-------------|----------|--------------|
 | container-detection-1v0zy/7 | 0.165 | 0.146 | 0.174 | 395 |
+
