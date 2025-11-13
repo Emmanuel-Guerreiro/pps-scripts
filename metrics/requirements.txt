@@ -1,5 +1,7 @@
-roboflow
 supervision
+numpy
 opencv-python
 pyyaml
-roboflow
+pandas
+tqdm
+

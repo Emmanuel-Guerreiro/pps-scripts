@@ -1,0 +1,6 @@
+labels_dir: "/home/emma/facultad/pps/parte2/to-test-metrics/ppe-detect.v5i.yolov11/test/labels"
+data_yaml_path: "/home/emma/facultad/pps/parte2/to-test-metrics/ppe-detect.v5i.yolov11/data.yaml"
+predictions_dir: "/home/emma/facultad/pps/parte2/to-test-metrics/validacion-ppe-detect.v5i.yolov11/predictions"
+output_dir: "/home/emma/facultad/pps/parte2/to-test-metrics/validacion-ppe-detect.v5i.yolov11"
+iou_threshold: 0.5
+confidence_threshold: 0.25

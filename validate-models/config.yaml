@@ -1,6 +1,6 @@
 api_key: "ooPxxzLT1xgs8CWEiMjY"
-test_dir: "/home/emma/facultad/pps/datasets/containers/raw/container-detection.v7i.yolov11/test"
+test_dir: "/home/emma/facultad/pps/datasets/ppe-general/test"
 models:
   # - name: "container-damage-detection-full/3"
-  - name: "container-detection-1v0zy/7"
+  - name: "ppe-detection-yfmym/1"
   # - name: "container-segmentation-fgvew/3"

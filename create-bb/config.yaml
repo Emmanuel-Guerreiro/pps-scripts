@@ -1,0 +1,45 @@
+# Configuration for bounding box visualization
+# Supports multiple datasets - each dataset will be processed sequentially
+# The script will automatically:
+# - Extract classes from origin/data.yaml (names field)
+# - Process train, valid, and test splits
+# - Maintain directory structure in target (target/train, target/valid, target/test)
+datasets:
+  # - origin: "/home/emma/facultad/pps/datasets/ppe-dataset"
+  #   target: "/home/emma/facultad/pps/parte2/test-labels-ppe-dataset"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/backpack.v1i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/backpack.v1i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/cgrt_smoke.v7i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/cgrt_smoke.v7i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/person-weapon-dataset.v4i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/person-weapon-dataset.v4i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/smoking.v1i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/smoking.v1i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/tree.v1i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/tree.v1i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/cctv-gun-detector.v1i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/cctv-gun-detector.v1i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/luggage.v1i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/luggage.v1i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/Safety-Jacket-Detection.v1i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/Safety-Jacket-Detection.v1i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/smoking.v3i.yolov11"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/smoking.v3i.yolov11"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/helmet-no-helmet"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/helmet-no-helmet"
+
+  # - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/ppe-mask-glove-eyewear"
+  #   target: "/home/emma/facultad/pps/datasets-con-bb/target/ppe-mask-glove-eyewear"
+
+  - origin: "/home/emma/facultad/pps/datasets-con-bb/origin/ppe-detection-yolov8-dataset"
+    target: "/home/emma/facultad/pps/datasets-con-bb/target/ppe-detection-yolov8-dataset"
