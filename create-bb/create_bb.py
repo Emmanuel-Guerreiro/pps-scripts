@@ -2,6 +2,20 @@ import os
 import cv2
 import yaml
 
+# Paleta de colores BGR por clase (se cicla si hay más clases)
+CLASS_COLORS = [
+    (0, 0, 255),    # rojo
+    (255, 0, 0),    # azul
+    (0, 255, 0),    # verde
+    (0, 255, 255),  # amarillo
+    (255, 0, 255),  # magenta
+    (255, 255, 0),  # cian
+    (128, 0, 128),  # morado
+    (0, 128, 255),  # naranja
+    (128, 128, 0),  # oliva
+    (0, 128, 128),  # teal
+]
+
 # === CONFIGURACIÓN ===
 # Cargar configuración desde config.yaml
 def load_config(config_path="config.yaml"):
@@ -66,7 +80,7 @@ def draw_boxes(image_path, label_path, output_path, classes):
             y2 = int(y_center + box_h / 2)
 
             # Dibujar rectángulo y etiqueta
-            color = (0, 255, 0)
+            color = CLASS_COLORS[int(class_id) % len(CLASS_COLORS)] if CLASS_COLORS else (0, 255, 0)
             cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
 
             class_name = classes[int(class_id)] if int(class_id) < len(classes) else f"cls_{int(class_id)}"
